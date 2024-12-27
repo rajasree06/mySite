@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <h1>New in Clothing</h1>
+        <div class="filters">
+            <button>Recommended</button>
+            <button>Fast Delivery</button>
+            <select>
+                <option>Color</option>
+            </select>
+        </div>
+    </header>
+    <section class="product-grid">
+        <div class="product">
+            <img src="{% static 'images/buttoned_top.jpg' %}" alt="Buttoned Top">
+            <p class="product-name">Buttoned Top</p>
+            <p class="price">₹690</p>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/placket_blouse.jpg' %}" alt="Placket Blouse">
+            <p class="product-name">Placket Blouse</p>
+            <p class="price">₹990</p>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/skorts.jpg' %}" alt="Skorts">
+            <p class="product-name">Skorts</p>
+            <p class="price">₹1,290</p>
+        </div>
+    </section>
+</body>
+</html>
